@@ -1,5 +1,5 @@
 /*Обнуление*/
-*, 
+*,
 *::before,
 *::after {
   padding: 0;
@@ -42,6 +42,10 @@ body {
   font-weight: 600;
   color: #403f3d;
   background-color: #e1d4c9;
+}
+
+body.dark {
+  background-color: #403f3d;
 }
 
 .wrapper {
@@ -112,6 +116,62 @@ body {
   transform: scaleX(0);
   /* transform-origin: center; - по умолчанию*/
   transition: transform 0.3s ease;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 4px;
+
+  border: 1px solid #c1b6ad;
+  border-radius: 100px;
+
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.theme-toggle__icon {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: transparent;
+}
+
+/*.theme-toggle__icon--sun img {*/
+/*  width: 22px;*/
+/*  height: 22px;*/
+/*}*/
+
+.theme-toggle__icon--sun {
+  background-color: #b0907a;
+}
+
+.theme-toggle__icon--moon {
+  background-color: transparent;
+  color: #403f3d;
+}
+
+body.dark .theme-toggle__icon--sun {
+  background-color: transparent;
+}
+
+body.dark .theme-toggle__icon--moon {
+  background-color: #b0907a;
+  color: #e1d4c9;
 }
 
 .header__link-menu {

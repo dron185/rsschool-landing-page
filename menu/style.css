@@ -44,6 +44,10 @@ body {
   background-color: #e1d4c9;
 }
 
+body.dark {
+  background-color: #403f3d;
+}
+
 .wrapper {
   display: flex;
   flex-direction: column;
