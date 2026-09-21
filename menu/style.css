@@ -45,7 +45,8 @@ body {
 }
 
 body.dark {
-  background-color: #403f3d;
+  color: #e1d4c9;
+  background-color: #292826;
 }
 
 .wrapper {
@@ -145,6 +146,63 @@ body.dark {
   transition: transform 0.3s ease;
 }
 
+body.dark .header__item::after {
+  background-color: #e1d4c9;
+}
+
+.header__buttons {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.header__theme-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+
+  padding: 4px;
+
+  border: 1px solid #c1b6ad;
+  border-radius: 100px;
+
+  background-color: transparent;
+  cursor: pointer;
+  transition: all 0.35s ease-in;
+}
+
+.theme-toggle__icon {
+  width: 36px;
+  height: 36px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background-color: transparent;
+  transition: all 0.35s ease-in;
+}
+
+.theme-toggle__icon--sun {
+  background-color: #b0907a;
+}
+
+.theme-toggle__icon--moon {
+  background-color: transparent;
+  color: #403f3d;
+}
+
+body.dark .theme-toggle__icon--sun {
+  background-color: transparent;
+}
+
+body.dark .theme-toggle__icon--moon {
+  background-color: #b0907a;
+  color: #e1d4c9;
+}
+
 .header__link-menu {
   display: flex;
 }
@@ -163,6 +221,10 @@ body.dark {
   bottom: 0;
   left: 0;
   right: 0;
+}
+
+body.dark .menu-link::after {
+  background-color: #e1d4c9;
 }
 
 .menu-link__text {
@@ -216,6 +278,14 @@ body.dark {
   .header__item:hover::after {
     transform: scaleX(1);
     transition: transform 0.3s ease;
+  }
+
+  .header__theme-toggle:hover .theme-toggle__icon--moon {
+    background-color: #665f55;
+  }
+
+  .header__theme-toggle:hover svg path {
+    fill: #e1d4c9;
   }
 }
 @media (max-width: 1380px) {
