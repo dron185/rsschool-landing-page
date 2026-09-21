@@ -285,7 +285,7 @@ body {
 
 .enjoy__container {
   border-radius: 40px;
-  background: url(../assets/img/enjoy-bg.jpg) no-repeat center / cover;
+  background: url(assets/img/enjoy-bg.jpg) no-repeat center / cover;
   padding: 100px 100px;
   max-width: 100%;
   height: auto;
@@ -783,15 +783,15 @@ body {
 }
 
 .footer__contacts-location {
-  background: url(../assets/svg/pin-alt.svg) no-repeat;
+  background: url(assets/svg/pin-alt.svg) no-repeat;
 }
 
 .footer__contacts-phone {
-  background: url(../assets/svg/phone.svg) no-repeat;
+  background: url(assets/svg/phone.svg) no-repeat;
 }
 
 .footer__timetable {
-  background: url(../assets/svg/clock.svg) no-repeat;
+  background: url(assets/svg/clock.svg) no-repeat;
 }
 
 @media (hover: hover) {
