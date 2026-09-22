@@ -116,6 +116,11 @@ body.dark {
   line-height: 150%;
 }
 
+.logo {
+  width: 100px;
+  height: 60px;
+}
+
 .header__nav-container {
   display: flex;
   align-items: center;

@@ -37,6 +37,36 @@ html, body {
     scroll-behavior: smooth;
 }
 
+:root {
+    /* ===== Text ===== */
+    --text-primary: #403f3d;
+    --text-inverse: #e1d4c9;
+    --text-accent: #b0907a;
+
+    /* ===== Background ===== */
+    --bg-page: #e1d4c9;
+    --bg-container: #665f55;
+    --bg-overlay: rgba(64, 63, 61, 0.8); /* #403F3D — 80% */
+
+    /* ===== Border ===== */
+    --border-primary: #c1b6ad;
+    --border-inverse: #665f55;
+
+    /* ===== Dark Text ===== */
+    --dark-text-primary: #e1d4c9;
+    --dark-text-inverse: #e1d4c9;
+    --dark-text-accent: #b0907a;
+
+    /* ===== Dark Background ===== */
+    --dark-bg-page: #292826;
+    --dark-bg-container: #403f3d;
+    --dark-bg-overlay: rgba(41, 40, 38, 0.8); /* #292826 — 80% */
+
+    /* ===== Dark Border ===== */
+    --dark-border-primary: #665f55;
+    --dark-border-inverse: #c1b6ad;
+}
+
 body {
     font-family: 'Inter', sans-serif;
     font-weight: 600;
@@ -87,6 +117,11 @@ body.dark {
     justify-content: space-between;
     font-size: 16px;
     line-height: 150%;
+}
+
+.logo {
+    width: 100px;
+    height: 60px;
 }
 
 .header__nav-container {
