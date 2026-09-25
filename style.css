@@ -823,15 +823,15 @@ body {
 }
 
 .footer__contacts-location {
-  background: url(../assets/svg/pin-alt.svg) no-repeat;
+  background: url(assets/svg/pin-alt.svg) no-repeat;
 }
 
 .footer__contacts-phone {
-  background: url(../assets/svg/phone.svg) no-repeat;
+  background: url(assets/svg/phone.svg) no-repeat;
 }
 
 .footer__timetable {
-  background: url(../assets/svg/clock.svg) no-repeat;
+  background: url(assets/svg/clock.svg) no-repeat;
 }
 
 @media (hover: hover) {
