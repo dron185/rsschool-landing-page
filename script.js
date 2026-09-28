@@ -150,9 +150,3 @@ function touchMove(event) {
   coordinateX = null;
   coordinateY = null;
 }
-
-
-
-
-
-

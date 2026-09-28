@@ -188,6 +188,7 @@ body.dark .header__item::after {
 .header__buttons {
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -394,6 +395,11 @@ body.dark .burger__line, .burger::before, .burger::after {
     transform: translateX(0);
     transition: transform 0.5s ease;
     text-align: center;
+  }
+
+  body.dark .header__nav-container  {
+    background-color: var(--dark-bg-page);
+    color: var(--dark-text-primary);
   }
 
   .header.active .header__nav-container {
