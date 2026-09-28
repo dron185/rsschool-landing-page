@@ -282,7 +282,7 @@ body.dark .burger {
   background-color: #403f3d;
 }
 
-body.dark .burger__line, .burger::before, .burger::after {
+body.dark .burger__line, body.dark .burger::before, body.dark .burger::after {
   background-color: #c1b6ad;
 }
 
