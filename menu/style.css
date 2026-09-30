@@ -657,6 +657,10 @@ body.dark .menu__card {
   transition: transform 0.9s;
 }
 
+body.dark .menu__modal-drinks {
+  background-color: var(--dark-bg-container);
+}
+
 .menu__modal.visible {
   visibility: visible;
   opacity: 1;
