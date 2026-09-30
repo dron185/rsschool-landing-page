@@ -734,10 +734,19 @@ body.dark .menu__modal-drinks {
   transition: all 0.5s ease;
 }
 
+body.dark .tabs__button {
+  border-color: var(--dark-border-primary);
+}
+
 .tabs__button_active {
   background-color: #665F55;
   color: #e1d4c9;
   cursor: auto;
+}
+
+body.dark .tabs__button_active {
+  background-color: var(--dark-bg-page);
+  border-color: transparent;
 }
 
 .tabs__button-letter {
@@ -751,9 +760,18 @@ body.dark .menu__modal-drinks {
   transition: all 0.5s ease;
 }
 
+body.dark .tabs__button-letter {
+  background-color: var(--dark-border-primary);
+}
+
 .tabs__button_active .tabs__button-letter {
-  background-color: #e1d4c9;
-  color: #403f3d;
+  background-color: var(--bg-page);
+  color: var(--text-primary);
+}
+
+body.dark .tabs__button_active .tabs__button-letter {
+  background-color: var(--dark-bg-container);
+  color: var(--dark-text-primary);
 }
 
 .modal-drinks__total-sum {
@@ -790,6 +808,12 @@ body.dark .menu__modal-drinks {
   transition: all 0.5s ease;
 }
 
+body.dark .modal-drinks__button {
+  background-color: var(--dark-bg-container);
+  border-color: var(--dark-border-primary);
+  color: var(--dark-text-primary);
+}
+
 /*-----------media----------*/
 
 @media (hover: hover) {
@@ -823,6 +847,9 @@ body.dark .menu__modal-drinks {
   .modal-drinks__button:hover {
     color: #e1d4c9;
     background-color: #665f55;
+  }
+  body.dark .modal-drinks__button:hover {
+    background-color: var(--bg-container);
   }
 }
 
